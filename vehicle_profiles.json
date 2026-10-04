@@ -10781,7 +10781,7 @@
     {
       "car_model": "Nissan : leaf-ze1",
       "init": "ATSP6;ATFCSH79B;ATST96;ATFCSD300000;ATFCSM1;",
-      "pids": [
+        "pids": [
         {
           "pid": "21018",
           "pid_init": "ATSH79B;ATFCSH79B;ATCRA7BB;",
@@ -10801,6 +10801,20 @@
               "class": "battery",
               "min": "0",
               "max": "100"
+            }
+          ]
+        },
+        {
+          "pid": "220E018",
+          "pid_init": "ATSH743;ATFCSH743;ATCRA763;",
+          "parameters": [
+            {
+              "name": "Odometer",
+              "expression": "(B4*65536)+(B5*256)+B6",
+              "unit": "km",
+              "class": "none",
+              "min": "0",
+              "max": "999999"
             }
           ]
         }
